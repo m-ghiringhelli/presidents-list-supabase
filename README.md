@@ -1,25 +1,37 @@
-## The Golden Rule: 
+## PLAN
 
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
-
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
-
-## Making a plan
-
-1) **Make a drawing of your app. Simple "wireframes"**
-1) **Once you have a drawing, name the HTML elements you'll need to realize your vision**
-1) **For each HTML element ask: Why do I need this?** 
-1) **Once we know _why_ we need each element, think about how to implement the "Why" as a "How"**
-1) **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change?**
-1) **Think about how to validate each of your features according to a Definition of Done**
-1) **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
-
-Additional considerations:
-- Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
-- Consider your data model. 
-  - What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need? 
-  - What are the key/value pairs? 
-  - What arrays might you need? 
-  - What needs to live in a persistence layer?
-- Is there some state we need to initialize?
-- Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+I) Database
+  A) Setup supabase database
+    1) Keys
+      a) id
+      b) name
+      c) years
+      d) party
+      e) fun fact
+    2) Values
+  B) Import database
+    A) Fetch all presidents with fetch function
+II) Setup HTML
+  A) Basic outline
+  B) One president element for home
+  C) Detail element for detail
+III) Create functions
+  A) fetch-utils
+    1) fetch presidents
+    2) fetch single president
+  B) render-utils
+    1) TDD - render presidents
+    2) TDD - render president
+IV) Render home
+  A) app.js
+    1) Render presidents
+    2) Append presidents to main page
+V) Render details
+  B) details.js
+    1) Render details (president)
+    2) Append to page
+VI) Styling
+  A) american flag background image
+  B) transparent div to hold presidents
+  C) font?
+  D) Colors? coolors? red white and blue?
