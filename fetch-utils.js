@@ -4,7 +4,7 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function getPresidents() {
-    const resp = await client.from('presidentslist').select('*');
+    const resp = await client.from('presidentslist').select('*').order('id', { ascending: true });
     return checkError(resp);
 }
 
