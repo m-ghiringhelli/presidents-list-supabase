@@ -1,14 +1,14 @@
 ## PLAN
 
 I) Database
-  A) Setup supabase database
-    1) Keys
-      a) id
-      b) name
-      c) years
-      d) party
-      e) fun fact
-    2) Values
+  A) Setup supabase database CHECK
+    1) Keys CHECK
+      a) id CHECK
+      b) name CHECK
+      c) years CHECK
+      d) party CHECK
+      e) fun fact CHECK
+    2) Values CHECK
   B) Import database
     A) Fetch all presidents with fetch function
 II) Setup HTML
