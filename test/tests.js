@@ -1,4 +1,4 @@
-import { renderPresidents } from '../render-utils.js';
+import { renderPresidents, renderDetail } from '../render-utils.js';
 
 const test = QUnit.test;
 
@@ -12,6 +12,14 @@ const president = {
     'birthplace': 'Point Pleasant, Ohio',
     'image': 'grant.jpg'
 };
+test('renderDetail should return details element', (expect) => {
+    const expected = `<div id="president-container"><h1>ULYSSES S. GRANT</h1><img src="../assets/grant.jpg"><p class="term">Years in office:</p><p class="term">1869-1877</p><p class="born">Birthplace:</p><p class="born">Point Pleasant, Ohio</p><p id="funfact">While almost penniless and dying of throat cancer from smoking so many cigars, he wrote his memoirs to try and raise some money. He died only a few days after finishing. They are regarded as not only some of the best presidential memoirs, but are also held in high literary regard for the quality of the writing.</p></div>`;
+
+    const actual = renderDetail(president);
+
+    expect.equal(actual.outerHTML, expected);
+});
+
 
 test('renderPresidents should return president elements', (expect) => {
     //Arrange
