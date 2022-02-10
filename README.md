@@ -14,7 +14,7 @@ I) Database
 II) Setup HTML
   A) Basic outline  CHECK
   B) One president element for home CHECK
-  C) Detail element for detail
+  C) Detail element for detail CHECK
 III) Create functions
   A) fetch-utils
     1) fetch presidents CHECK
@@ -26,10 +26,11 @@ IV) Render home CHECK
   A) app.js CHECK
     1) Render presidents  CHECK
     2) Append presidents to main page CHECK
-V) Render details
-  B) details.js
-    1) Render details (president)
-    2) Append to page
+V) Render details CHECK
+  B) details.js CHECK
+    1) Render details (president) CHECK
+    2) Append to page CHECK
+    3) get id from window and pass to fetch function
 VI) Styling
   A) american flag background image
   B) transparent div to hold presidents
