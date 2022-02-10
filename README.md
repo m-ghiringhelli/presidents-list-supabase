@@ -12,20 +12,20 @@ I) Database
   B) Import database CHECK
     A) Fetch all presidents with fetch function CHECK
 II) Setup HTML
-  A) Basic outline
-  B) One president element for home
+  A) Basic outline  CHECK
+  B) One president element for home CHECK
   C) Detail element for detail
 III) Create functions
   A) fetch-utils
     1) fetch presidents CHECK
     2) fetch single president
   B) render-utils
-    1) TDD - render presidents
+    1) TDD - render presidents  CHECK
     2) TDD - render president
-IV) Render home
-  A) app.js
-    1) Render presidents
-    2) Append presidents to main page
+IV) Render home CHECK
+  A) app.js CHECK
+    1) Render presidents  CHECK
+    2) Append presidents to main page CHECK
 V) Render details
   B) details.js
     1) Render details (president)

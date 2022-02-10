@@ -8,7 +8,7 @@ const president = {
     'name': 'Ulysses S. Grant',
     'years': '1869-1877',
     'party': 'Republican',
-    'fun_fact': 'While almost penniless and dying of throat cancer from smoking so many cigars, he wrote his memoir to try and raise some money. He died only a few days after finishing. They are regarded as not only some of the best presidential memoirs, but are also held in high literary regard for the quality of the writing. ',
+    'fun_fact': 'While almost penniless and dying of throat cancer from smoking so many cigars, he wrote his memoirs to try and raise some money. He died only a few days after finishing. They are regarded as not only some of the best presidential memoirs, but are also held in high literary regard for the quality of the writing.',
     'birthplace': 'Point Pleasant, Ohio',
     'image': 'grant.jpg'
 };
