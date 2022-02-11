@@ -2,6 +2,11 @@ body {
     font-family: 'Volkhov', serif;
 }
 
+#bg {
+    position: relative;
+    overflow: hidden;
+}
+
 h1 {
     text-align: center;
     font-size: 3rem;
@@ -59,7 +64,7 @@ h2 {
 
     .presidents p {
         font-size: 1.2rem;
-        left: 0px;
+        left: 5px;
     }
 
     h2 {
