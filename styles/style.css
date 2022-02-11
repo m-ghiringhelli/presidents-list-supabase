@@ -2,16 +2,39 @@ body {
     font-family: 'Volkhov', serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+#nav {
+    padding: 1% 20%;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#nav span {
+    color: rgb(56, 56, 56);
+}
+
 #president-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#main-body img {
+#president-container img {
     width: 70%;
     border-radius: 50px;
     margin-bottom: 40px;
+    max-width: 600px;
+}
+
+#president-container img:hover {
+    width: 85%;
+    transition: width 2s;
+    /* transition: border 1s; */
 }
 
 p {
@@ -19,24 +42,35 @@ p {
 }
 
 p:nth-of-type(1) {
-    color: blue;
+    font-family: Manrope;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 5px;
 }
 
 p:nth-of-type(2) {
-    color: red;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 p:nth-of-type(3) {
-    color: blue;
+    font-family: Manrope;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 5px;
 }
 
 p:nth-of-type(4) {
-    color: red;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 #funfact {
     font-family: Manrope;
     font-size: 0.9rem;
+    padding: 0% 5%;
 }
 
 #bg {
@@ -82,7 +116,7 @@ h2 {
     font-weight: bold;
     font-size: 1.4rem;
     left: 20px;
-    top: -5px;
+    top: 25px;
 }
 
 .presidents:hover img {
@@ -102,10 +136,63 @@ h2 {
     .presidents p {
         font-size: 1.2rem;
         left: 5px;
+        top: -5px;
     }
 
     h2 {
         max-width: 100%;
         text-align: center;
     }
+
+    h1 {
+        grid-area: head;
+        margin-top: 0px;
+    }
+
+    p:nth-of-type(1) {
+        grid-area: p1;
+        margin-top: 5%;
+    }
+    
+    p:nth-of-type(2) {
+        grid-area: p2;
+        margin-bottom: 5%;
+    }
+    
+    p:nth-of-type(3) {
+        grid-area: p3;
+        margin-top: 5%;
+    }
+    
+    p:nth-of-type(4) {
+        grid-area: p4;
+        margin-bottom: 5%;
+    }
+
+    #funfact {
+        grid-area: p5;
+        margin-bottom: 20%;
+        padding: 0% 25% 0% 0%;
+    }
+
+    #president-container img {
+        grid-area: pic;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #president-container {
+        display: grid; 
+        grid-template-columns: 1fr 0.75fr; 
+        grid-template-rows: .5fr 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 1.5fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "head head"
+          "pic ."
+          "pic p1"
+          "pic p2"
+          "pic p3"
+          "pic p4"
+          "pic p5"; 
+      }
 }
