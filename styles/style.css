@@ -1,5 +1,11 @@
 body {
+    --jet: hsla(0, 1%, 20%, 1);
+    --cedar-chest: rgb(218, 58, 52);
+    --iris: hsla(238, 70%, 57%, 1);
+    --gray-x-11-gray: hsla(0, 0%, 72%, 1);
+    --ghost-white: hsla(252, 19%, 95%, 1);
     font-family: 'Volkhov', serif;
+    background-color: var(--ghost-white);
 }
 
 a {
@@ -15,17 +21,17 @@ a {
 
 
 #nav span {
-    color: slategrey;
+    color: var(--jet);
     padding: 10px 20px;
 }
 
 #nav span:hover {
     color: white;
-    background: radial-gradient(darkgrey, white);
-    border: 1px solid rgba(181, 183, 187, 0.5);
+    background: radial-gradient( var(--gray-x-11-gray), var(--ghost-white));
+    border: 1px solid hsla(0, 0%, 72%, 0.5);
     border-radius: 20px;
-    transition: all 0.8s;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s;
+    box-shadow: 2px 5px 5px hsla(0, 0%, 72%, 0.4);
 }
 
 #president-container {
@@ -43,7 +49,7 @@ a {
 
 #president-container img:hover {
     width: 85%;
-    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 10px 10px hsla(0, 0%, 72%, 0.5);
     transition: all 2s;
 }
 
@@ -56,12 +62,14 @@ p:nth-of-type(1) {
     font-size: 0.9rem;
     font-style: italic;
     margin-bottom: 5px;
+    color: var(--jet);
 }
 
 p:nth-of-type(2) {
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 10px;
+    color: var(--jet);
 }
 
 p:nth-of-type(3) {
@@ -69,12 +77,14 @@ p:nth-of-type(3) {
     font-size: 0.9rem;
     font-style: italic;
     margin-bottom: 5px;
+    color: var(--jet)
 }
 
 p:nth-of-type(4) {
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 20px;
+    color: var(--jet)
 }
 
 #funfact {
@@ -90,8 +100,10 @@ p:nth-of-type(4) {
 
 h1 {
     text-align: center;
+    color: var(--ghost-white);
     font-size: 3rem;
-    margin-top: 40px;
+    margin-top: 0px;
+    background-image: linear-gradient(to bottom right, var(--cedar-chest), var(--iris));
 }
 
 h2 {
@@ -122,7 +134,7 @@ h2 {
 .presidents p {
     position: absolute;
     z-index: 3;
-    color: white;
+    color: var(--ghost-white);
     font-weight: bold;
     font-size: 1.4rem;
     left: 20px;
@@ -147,6 +159,7 @@ h2 {
 
     #funfact {
         padding: 0px 50px;
+        margin-bottom: 100px;
     }
 }
 
@@ -156,6 +169,9 @@ h2 {
     }
     #nav span {
         padding: 5px 10px;
+    }
+    #funfact {
+        margin-bottom: 50px;
     }
 }
 
