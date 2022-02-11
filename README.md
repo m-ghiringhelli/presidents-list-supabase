@@ -18,10 +18,10 @@ II) Setup HTML
 III) Create functions
   A) fetch-utils
     1) fetch presidents CHECK
-    2) fetch single president
+    2) fetch single president CHECK
   B) render-utils
     1) TDD - render presidents  CHECK
-    2) TDD - render president
+    2) TDD - render president CHECK
 IV) Render home CHECK
   A) app.js CHECK
     1) Render presidents  CHECK
@@ -30,7 +30,7 @@ V) Render details CHECK
   B) details.js CHECK
     1) Render details (president) CHECK
     2) Append to page CHECK
-    3) get id from window and pass to fetch function
+    3) get id from window and pass to fetch function CHECK
 VI) Styling
   A) american flag background image
   B) transparent div to hold presidents
