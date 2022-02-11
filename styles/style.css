@@ -4,14 +4,15 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 40px;
 }
 
 h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0% 5%;
     margin-bottom: 30px;
+    max-width: 350px;
 }
 
 #presidents-container {
@@ -37,10 +38,32 @@ h2 {
     z-index: 3;
     color: white;
     font-weight: bold;
+    font-size: 1.4rem;
     left: 20px;
     top: -5px;
 }
 
 .presidents:hover img {
     opacity: .75;
+} 
+
+@media screen and (min-width: 720px) {
+    .presidents img {
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #presidents-container {
+        display: flex;
+    }
+
+    .presidents p {
+        font-size: 1.2rem;
+        left: 0px;
+    }
+
+    h2 {
+        max-width: 100%;
+        text-align: center;
+    }
 }
