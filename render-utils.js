@@ -41,24 +41,34 @@ export function renderDetail(president) {
 export function renderNav(id) {
     const div = document.createElement('div');
     div.setAttribute('id', 'nav');
-    const a1 = document.createElement('a');
-    a1.href = `./?id=${id - 1}`;
     const span1 = document.createElement('span');
     span1.setAttribute('id', 'nav1');
     span1.textContent = 'previous president';
-    const a2 = document.createElement('a');
-    a2.href = `../index.html`;
+    const a1 = document.createElement('a');
+    a1.href = `./?id=${id - 1}`;
     const span2 = document.createElement('span');
     span2.setAttribute('id', 'nav2');
     span2.textContent = 'back to the list';
-    const a3 = document.createElement('a');
-    a3.href = `./?id=${id + 1}`;
+    const a2 = document.createElement('a');
+    a2.href = `../index.html`;
     const span3 = document.createElement('span');
     span3.setAttribute('id', 'nav3');
     span3.textContent = 'next president';
+    const a3 = document.createElement('a');
+    a3.href = `./?id=${id + 1}`;
     a1.append(span1);
     a2.append(span2);
     a3.append(span3);
-    div.append(a1, a2, a3);
-    return div;
+    if (id == 1) {
+        div.append(a2, a3);
+        return div;
+    } else if (id <= 7) {
+        if (id == 7) {
+            div.append(a1, a2);
+            return div;
+        } else {
+            div.append(a1, a2, a3);
+            return div;
+        }
+    }
 }
