@@ -59,11 +59,11 @@ export function renderNav(id) {
     a1.append(span1);
     a2.append(span2);
     a3.append(span3);
-    if (id == 1) {
+    if (id === 1) {
         div.append(a2, a3);
         return div;
     } else if (id <= 7) {
-        if (id == 7) {
+        if (id === 7) {
             div.append(a1, a2);
             return div;
         } else {
